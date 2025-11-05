@@ -588,21 +588,14 @@ function applyBackEnemies() {
         });
 
         document.getElementById("output").value = JSON.stringify(json, null, 2);
-        
+
         const checkedCheckboxes = document.querySelectorAll(".misschk:checked");
 
-        // 3. 遍历并删除它们
         checkedCheckboxes.forEach(checkbox => {
-            // 假设您只需要删除 <input type="checkbox"> 元素本身
-            
-            // 推荐使用兼容性更好的 parentNode.removeChild() 来避免 Uncaught TypeError
             if (checkbox.parentNode) {
                 checkbox.parentNode.removeChild(checkbox);
             }
-            /*
-            // 如果您的目标环境确定支持 Element.remove()，也可以使用：
-            // checkbox.remove(); 
-            */
+            
         });
             
     } else {

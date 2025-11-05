@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我是自愿给大黄蜂当狗的</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/crypto-js.min.js"></script>
+</head>
+<body>
+<h2>Hollow Knight: Silksong Save Editor</h2>
+<h3>Note that this project may have bugs, <br> and always back up your save files first is strongly advised.</h3>
+
+<div class="container">
+
+<div class="file-analysis">
+    <p>For Windows x64 users, your save file should locate at: </p>
+    <p>C:\Users\%username%\AppData\LocalLow\Team Cherry</p>
+
+    <input type="file" id="fileInput">
+    <br>
+    <br>
+    <button onclick="onDecrypt()" id="onDecrypt">Decrypt File</button>
+    <button onclick="onEncrypt()" id="onEncrypt">Download Encrypted</button>
+    <br>
+    <textarea id="output" spellcheck="false"></textarea>
+</div>
+<script src="ChangeGameMode.js" defer></script>
+<div class="mode-selector">
+    <label for="permadeathModeSelector">Change game mode: </label>
+    <select id="permadeathModeSelector" onchange="updatePermadeathMode()">
+        <option value="0">Normal</option>
+        <option value="1">Steel Soul</option>
+        <option value="2">Destroyed</option>
+    </select>
+</div>
+
+<div class="compare">
+    
+    Enemies yet to be encountered: <button onclick="compareEnemyNames()" id="compareEnemy">See</button>
+    <label>
+        <ul id="result"></ul>
+        
+    </label>
+    <label><input type="checkbox" id="selectAll">Select All &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Kill number: <input type="text" id="kills">
+    </label>
+    <br><br>
+    <button onclick="applyBackEnemies()" id="add-enemies">Add Enemies</button>
+
+</div>
+
+
+</div>
+
+
+<script src="Encrypt%20Decrypt.js" defer></script>
+<script src="ClearSpecificAreas.js"></script>
+<script src="compareEnemyNames.js"></script>
+
+
+</body>
+</html>

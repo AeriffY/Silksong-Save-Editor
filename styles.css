@@ -1,0 +1,105 @@
+#output{
+  width: 450px;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Consolas';
+  font-size: 16px;
+}
+h2, h3{
+  text-align: center;
+  font-family: "Segoe UI";
+  font-weight: normal;
+}
+body {
+    background-color: #f4f7f6;
+}
+textarea{
+  margin-top:20px;
+}
+button {
+    background-image: linear-gradient(#f7f8fa ,#eceff3);
+    border-color: #8d9096;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    color: #0f1111;
+    cursor: pointer;
+    height: 29px;
+    
+    overflow: hidden;
+    padding: 0 11px;
+}
+button:active:hover{
+  border-color: #a2a6ac #979aa1 #82858a;
+}
+button:hover {
+    background-image: linear-gradient(#f5f5f5, #e8e8e8); 
+    border-color: #83868c; 
+}
+#fileInput {
+  margin-right: 20px;
+  font-size: 15px;
+}
+#selectAll {
+  margin-right: 10px;
+}
+#add-enemies {
+  font-size: 15px;
+  font-family: "Segoe UI";
+}
+#kills {
+  width: 50px;
+  margin-left: 5px;
+  font-family: "Segoe UI";
+  font-size: 15px;
+}
+#onDecrypt, #onEncrypt{
+  margin-right: 45px;
+  font-family: "Segoe UI";
+  font-size: 15px;
+}
+#compareEnemy {
+  font-family: "Segoe UI";
+  font-size: 15px;
+}
+p {
+    font-family: "Segoe UI";
+}
+.container {
+    display: flex;
+    gap: 140px;
+    margin-top: 40px;
+}
+
+
+.mode-selector {
+    font-size: 16px;
+    font-family: "Segoe UI";
+}
+
+.file-analysis {
+    border: 5px;
+    border-radius: 5px;
+    padding:5px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left:20px;
+    font-size: 17px;
+}
+
+#permadeathModeSelector {
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.compare {
+    font-family: "Segoe UI";
+    font-size: 17px;
+}
+
+ul {
+  max-height: 300px;
+  overflow-y: scroll;
+}

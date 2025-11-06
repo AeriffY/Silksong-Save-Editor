@@ -63,6 +63,28 @@ button:hover {
   font-family: "Segoe UI";
   font-size: 15px;
 }
+#rosaryNum {
+  font-family: "Segoe UI";
+  font-size: 15px;
+  width: 55px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+#changeRosary {
+  font-family: "Segoe UI";
+  font-size: 15px;
+}
+#hour,#minute {
+  width: 35px;
+  font-size: 15px;
+}
+#changePlayTime {
+  margin-left: 15px;
+  font-size: 15px;
+  font-family: "Segoe UI";
+
+}
+
 p {
     font-family: "Segoe UI";
 }
@@ -74,7 +96,7 @@ p {
 
 
 .mode-selector {
-    font-size: 16px;
+    font-size: 17px;
     font-family: "Segoe UI";
 }
 

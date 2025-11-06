@@ -32,6 +32,19 @@
         <option value="1">Steel Soul</option>
         <option value="2">Destroyed</option>
     </select>
+    <br><br><br><br>
+    <label for="changeRosary">Edit rosary number: </label>
+    <input type="text" id="rosaryNum">
+    <button id="changeRosary" onclick="changeRosary()">Apply</button>
+    <br><br><br><br>
+    <label for="changePlayTime">Edit playtime: </label><br><br>
+    <label for="hour">Hour: </label>
+    <input type="number" id="hour" name="hour" min="0" max="23" value="0" placeholder="0-23">
+    &nbsp;&nbsp;
+    <label for="minute">Minute: </label>
+    <input type="number" id="minute" name="minute" min="0" max="59" value="0" placeholder="0-59">
+    <button id="changePlayTime" onclick="changePlayTime()">Apply</button>
+
 </div>
 
 <div class="compare">
@@ -56,6 +69,8 @@
 <script src="Encrypt%20Decrypt.js" defer></script>
 <script src="ClearSpecificAreas.js"></script>
 <script src="compareEnemyNames.js"></script>
+<script src="changeRosary.js"></script>
+<script src="changePlayTime.js"></script>
 
 
 </body>

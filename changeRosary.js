@@ -18,3 +18,22 @@ function changeRosary() {
     }
 
 }
+
+function changeShard() {
+    const output = document.getElementById("output");
+    if(!output){return;}
+    let json;
+    try {json = JSON.parse(output.value.trim());} catch(e) {return;}
+
+    const num = document.getElementById("shardNum").value.trim();
+    const numVal = Number(num);
+    if(!isNaN(numVal) && numVal!="" && numVal>=0) {
+        const rosary = json.playerData; 
+        if(!rosary) {return;}
+        json.playerData.ShellShards = numVal; 
+        output.value = JSON.stringify(json, null, 2);
+    } else {
+        return;
+    }
+
+}

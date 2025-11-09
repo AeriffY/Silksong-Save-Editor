@@ -114,6 +114,7 @@ function onDecrypt() {
     document.getElementById("output").value =
       JSON.stringify(json, null, 2);
       syncSelectorWithTextarea();
+      syncFleaGamesScoreWithTextarea()
   });
 
   // console.log("写入")
